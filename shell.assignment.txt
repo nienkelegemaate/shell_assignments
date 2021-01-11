@@ -1,0 +1,66 @@
+
+Exercise 1.1 
+Inputting 'ls' lists the content of the current working directory, displaying the names of files contained within that directory.
+
+Exercise 1.2 
+
+-haS is used to list all files sorted by files size, along with human-readable file sizes
+
+
+Exercise 2.1
+Pwd stands for present working directory, which currently is /Users/nienkelegemaate/Documents/data analysis week 2/shell_magic
+There are no different colours. 
+
+Exercise 2.2
+Cd stands for change directory
+Cd .. moved my working directory up one level, so that now the pwd is /Users/nienkelegemaate/Documents/data analysis week 2
+In order to move back to the folder I started at, I used cd 'shell_magic'.
+To set the working directory I used cd 'shell_magic'
+
+Exercise 3.1
+Touch hello_world.txt created the new file
+
+Exercise 3.2
+Mkdir stands for make directory 
+Mkdir hello_world makes a folder 
+
+Exercise 3.3
+Mv stands for move item 
+Creating an empty file probably did not work because that file already existed 
+Mv hello_world.txt \hello_world to put the file into the folder
+mv hello_world.txt .. to pull the file out of the folder 
+Cd hello_world to change the working directory to the hello_world folder 
+mv hello_world.txt \hello_world
+mv hello_world.txt ..
+
+Exercise 3.4
+Cp stands for copy, with copying you save a version of the file on the original place, with move you move the original file and do not also have a copy
+Cd .. to go to the shell_magic file 
+cp hello_world.txt \hello_world
+cp hello_world.txt \hello_world 
+cp hello_world.txt \hello_world\world_hello.txt 
+mv hello_world.txt \world_hello.txt
+mv world_hello.txt \hello_world
+
+Exercise 3.5
+cd 'shell_magic' 
+rm stands for remove item
+rm hello_world.txt to remove the file
+rm hello_world error: no such file or directory
+rm -r hello_world 
+
+Exercise 4.1
+cat stands for get-content 
+touch hello_world.txt
+cat hello_world.txt
+echo writes any specified operands, separated by single blank 
+
+git add 'data analysis week 2'
+
+
+git branch -M main
+git remote add origin https://github.com/nienkelegemaate/shell_assignments.git
+
+
+
+
