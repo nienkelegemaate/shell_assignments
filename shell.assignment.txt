@@ -51,15 +51,54 @@ rm -r hello_world
 
 Exercise 4.1
 cat stands for get-content 
-touch hello_world.txt
-cat hello_world.txt
-echo writes any specified operands, separated by single blank 
+touch hello_world.txt 
+cat hello_world.txt this command does not return anything because hello world is an empty file 
 
-git add 'data analysis week 2'
+Exercise 4.2
+echo writes any specified operands (separated by single blank characters and followed by a newline character) to the standard output. It basically writes its arguments to standard output. 
+echo 'file contents' > file.txt
+cat file.txt
+echo 'more contents' >> file.txt
+cat file.txt
+
+4.3
+
+ls -R ~ > home_contents.list
+less is nice to use when dealing with large files with a lot of content, because now you can see the content in pages which avoids cluttering the console
+
+5.1
+wc stands for word, line, character, and byte count
+wc home_contents.list this file contains 148770 words, the numbers respectively stand for amount of words, lines, characters, and byte count
+cat home_contents.list | wc the output is the same, cat is used to output the contents of the files so that is where we get the information on
+ls | wc now we get information on the working directory, so there are 4 files 
+
+5.2
+echo 'hello world' > helloworld.txt
+echo 'world hello' >> helloworld.txt
+Grep is a file pattern searcher
+grep world helloworld.txt this command gives you the two files that contain the word world
+echo 'world hello' >> worldhello.txt
+grep world helloworld.txt worldhello.txt 
+output: helloworld.txt:hello world
+helloworld.txt:world hello
+worldhello.txt:world hello
+
+5.3
+grep hello helloworld.txt
+cat helloworld.txt | grep world | wc | less
 
 
+
+git init
+git add 'shell.assignment.txt'
 git branch -M main
 git remote add origin https://github.com/nienkelegemaate/shell_assignments.git
+
+git commit -m 'shell_assignments.txt'
+
+
+
+
 
 
 
